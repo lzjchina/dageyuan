@@ -1,0 +1,110 @@
+html,body,div,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(63,75,91); 
+    overflow: hidden;
+    display: none;
+}
+
+.water{
+    width: 20vw;
+    height: 20vw;
+    border: 1px solid gray;
+    margin: 10vw auto;
+    background: red;
+}
+.colorBox{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+}
+.colorCont{
+    height: 30vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    left:0;
+}
+.colorCont >li{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin: 0 5vw;
+    transition: all .3s;
+}
+.colorCont >li:nth-child(1){
+    background: red;
+    transform: scale3d(1,1,1);
+}
+.colorCont >li:nth-child(2){
+    background: orange;
+}
+.colorCont >li:nth-child(3){
+    background: yellow;
+}
+.colorCont >li:nth-child(4){
+    background: green;
+}
+.colorCont >li:nth-child(5){
+    background: cyan;
+}
+.colorCont >li:nth-child(6){
+    background: blue;
+}
+.colorCont >li:nth-child(7){
+    background: purple;
+}
+.tip{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    /*line-height: 200px;*/
+}
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(63,75,91);
+    overflow: hidden;
+    display: block;
+    position: absolute;
+}
+.btnBox{
+    display: flex;
+    justify-content: center;
+    margin-top:calc(50% - 10vw);
+}
+.enterBtn{
+    width: 40vw;
+    height: 20vw;
+    background: rgb(255,255,255);
+    color: #252525;
+    border-radius: 10vw;
+    font-size: 5vw;
+    font-weight: bold;
+    outline: none;
+    border: 0;
+}
+.enterBtn:focus{
+    border: 1px solid red;
+    box-shadow: 2px 2px 5px #252525;
+}
+.loginTip{
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+    font-size: 5vw;
+    color: #fff;
+    line-height: 20vw;
+}

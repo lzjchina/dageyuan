@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    width: 1152px;
+    height: 228px;
+    overflow: hidden;
+    display: flex;
+    /*background: url('./images/timg.jpg') center center no-repeat;*/
+    background-size: 100% 100%; 
+}
+#box1{
+    width: 288px;
+    height: 288px;
+    position: relative;
+    overflow: hidden;
+}
+.box1_img{
+    width: 288px;
+    height: 288px;
+    background: url('../images/timg1.jpg') center center no-repeat;
+    position: absolute;
+    z-index: 99;
+    opacity: 0.8;
+}
+.box_video{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    position: absolute;
+    z-index: 999;
+    display: block;
+}
+#box2{
+    width: 288px;
+    height: 288px;
+    position: relative;
+    overflow: hidden;
+}
+#box3{
+    width: 288px;
+    height: 288px;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/timg1.jpg') center center no-repeat;
+}
+#box4{
+    width: 288px;
+    height: 288px;
+    position: relative;
+    overflow: hidden;
+}
